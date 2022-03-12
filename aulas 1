@@ -1,0 +1,14 @@
+var nota1 = prompt("Digite sua nota 1")
+var nota2 = prompt("Digite sua nota 2")
+var nota3 = prompt("Digite sua nota 3")
+var nota4 = prompt("Digite sua nota 4")
+var soma = parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFloat(nota4)
+var media = soma / 4
+
+if (media >= 5){
+  alert(" Sua média eh: " + media+ " voce eh o bixão passou direto num tem !!")
+}
+else {
+  alert("Reprovou !! tente novamente ano que vem ")
+}
+
