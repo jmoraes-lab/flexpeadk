@@ -1,0 +1,7 @@
+var notas = [10,10,10,10,10]
+var soma =0
+notas.forEach(function(nota){
+  soma = soma + nota
+      
+})
+alert("a soma eh " + soma )
