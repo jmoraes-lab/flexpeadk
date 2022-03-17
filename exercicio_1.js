@@ -23,6 +23,6 @@ var logado = true
 var saiu = false
 var ligar = true 
 var aberto = false
-var aprendendo = true
+var aprendendo = false
 
 alert(Number4)
