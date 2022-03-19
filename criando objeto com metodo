@@ -1,0 +1,20 @@
+class Pessoa{
+  nomeCompleto
+  anoNascimento
+  idade 
+  calcularIdade(anoAtual){
+    this.idade = anoAtual - this.anoNascimento
+  }
+}
+
+let eujj = new Pessoa()
+  eujj.nomeCompleto = "JJ"
+  eujj.anoNascimento =1993
+  eujj.calcularIdade(2022)
+  autenticar(eujj)
+  
+function autenticar(pessoa){
+  console.log(pessoa)
+}
+ 
+ 
