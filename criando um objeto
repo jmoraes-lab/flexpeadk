@@ -1,0 +1,17 @@
+var nome = "Badá"
+var idade = "28"
+var dtnasc = "06/04/1993"
+var estiloMusica ="Ecletico"
+var temCarro = true
+var temFilhos = false
+
+let eu = {
+  oNome: nome,
+  OIdade: idade,
+  Odtnasc:   dtnasc,
+  OestiloMusica: estiloMusica,
+  OtemCarro: temCarro,
+  OtemFilhos: temFilhos,
+}
+
+console.log(eu)
