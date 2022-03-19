@@ -1,0 +1,22 @@
+class Pessoa{
+  nomeCompleto
+  anoNascimento
+  idade 
+    //metodo construtor 
+  constructor(nome,anoNas){ // criando um construtor, sempre sera iniciado quando é instaciado
+      this.nomeCompleto = nome
+      this.anoNascimento = anoNas
+      this.calcularIdade()
+  }
+  //metodo calcular idade  
+  calcularIdade(anoAtual){
+    this.idade = 2022 - this.anoNascimento
+  }
+}
+
+let eujj = new Pessoa("jj",1993)
+let bada = new Pessoa("bada bada",1990)
+
+console.log(eujj)
+console.log(bada)
+   
