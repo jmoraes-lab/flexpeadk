@@ -1,0 +1,21 @@
+class Pessoa{
+  nomeCompleto
+  idade
+  dataNascimento
+  estiloMusica
+  carros
+  filhos
+}
+
+let eujj = new Pessoa()
+  eujj.nomeCompleto = "JJ"
+  eujj.idade = "28"
+  eujj.dataNascimento ="06-04-1993"
+  eujj.estiloMusica ="Ecletico"
+  eujj.carros = true
+  eujj.filhos = false
+
+  
+ console.log(eujj)
+ 
+ 
