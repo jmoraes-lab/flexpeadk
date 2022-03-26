@@ -1,0 +1,30 @@
+var vendas = [32.54, 44.56, 10.10, 11.09]
+var total = 0
+
+var desconto15 = 0.15
+var desconto20 = 0.20
+var desconto25 = 0.25
+var ccomissaoAplicada = '%'
+var comissao   = 0
+
+vendas.forEach(function(valor, index) {
+  
+  total = total + valor
+  
+  if (total <= 100) {
+    comissao = (total * desconto15)
+    ccomissaoAplicada = "15%"
+  }
+  else if (total < 200) {
+    comissao = (total * desconto20)
+    ccomissaoAplicada = "20%"
+  }
+  else if (total >= 200) {
+    comissao = (total * desconto25)
+    ccomissaoAplicada = "25%"
+  }
+})
+               
+console.log("Voce vendeu: "+ total)
+console.log("o valor da comissao é -> R$" + comissao + ", voce ganhou " +ccomissaoAplicada+" de comissao aplicada")
+               
