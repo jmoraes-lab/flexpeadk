@@ -1,0 +1,78 @@
+/* criar classe produto, como o nome o valor dele e na hora de criar a venda, 
+dizer quais aos os produtos da venda ao inves do valor inteiro.*/
+
+class Vendedor {
+  nome
+  cargo
+  vendas = []
+  comissao = 0
+  totalVendas = 0
+  
+  calcularComissao() {
+    this.comissao = this.totalVendas * this.cargo.percentual
+  }
+
+  calcularTotalDeVendas() {
+    this.vendas.forEach((venda) => {
+      this.totalVendas = this.totalVendas + venda.valor
+    })
+    
+    this.totalVendas = this.totalVendas.toFixed(2)
+  }
+}
+
+class Venda {
+  valorProduto = []
+  
+  constructor(valor) {
+    this.valor = valor
+  }
+}
+
+class Cargo {
+  nome
+  percentual
+}
+
+class Produto {
+  nomeProduto
+  valorProduto
+}
+
+
+var vendedor1 = new Cargo()
+vendedor1.nome = "Vendedor Nível 1"
+vendedor1.percentual = 0.05
+
+var vendedor2 = new Cargo()
+vendedor2.nome = "Vendedor Nível 2"
+vendedor2.percentual = 0.1
+
+var produto1 = new Produto()
+produto1.nome = "Camisa lascoste" 
+produto1.valorProduto = 200
+
+var produto2 = new Produto()
+produto2.nome = "bone" 
+produto2.valorProduto = 100
+
+var joaozinho = new Vendedor()
+joaozinho.nome = "João"
+joaozinho.cargo = vendedor1
+
+//var venda1 = new Venda(10.50)
+//var venda2 = new Venda(9.50)
+
+var venda1 = new Venda(produto1.valorProduto)
+var venda2 = new Venda(produto2.valorProduto)
+
+//joaozinho.vendas.push(venda1)
+//joaozinho.vendas.push(venda2)
+
+joaozinho.vendas.push(venda1)
+joaozinho.vendas.push(venda2)
+
+joaozinho.calcularTotalDeVendas()
+joaozinho.calcularComissao()
+
+console.log(joaozinho)
