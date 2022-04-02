@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Qual é a musica ? </h1>
+    <h2>Quem é o cantor ? </h2>
+    <p id="cinza">Vai vai vai passando !</p>
+    
+    <p class="verde">Vai vai vai que eu tbm vou !</p>
+    
+    <p> <strong>Lorem</strong>, <u> ipsum dolor sit amet consectetur adipisicing elit. Ratione </u>cumque quam unde autem vitae mollitia deleniti aperiam culpa. Velit, ex dignissimos minus culpa omnis dolores at reprehenderit quia eaque perspiciatis exercitationem eveniet, voluptatibus corrupti, totam temporibus nemo. Blanditiis accusantium labore quae, non sunt quo <i> fugit officiis repudiandae distinctio! Fugiat in hic beatae aliquid et similique.</i></p>
+    <form action="script.php" method="get">
+        <button>clica</button><br>
+        <input type="text"      name="nome"            id="" placeholder="Digite seu nome"><br>
+        <input type="number"    name="idade"           id=""><br>
+        <input type="date"      name="data_nascimento" id=""><br>
+        <input type="radio" name="sexo" valeu="Femea"  id=""> F / 
+        <input type="radio" name="sexo" valeu="Macho"  id=""> M  <br><br>
+
+        <select name="uf" >
+            <option value="" disabled selected="selected">selecione uma opção</option>
+            <option value="AM">Amazonas</option>
+            <option value="AC">Acre</option>
+            <option value="CP">Compensa</option>
+            <option value="NY">New City</option>
+        </select>
+        <br><br>
+        
+        <input type="checkbox"      name="preferencias[]" value="C"> Comedia
+        <input type="checkbox"      name="preferencias[]" value="D"> Drama
+        <br>
+        <input type="password" name="senha" >
+    </form>
+
+    <!-- #criando uma lista -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <a href="https://www.google.com/search?q=jogo+do+flamengo&oq=jogodo+&aqs=chrome.1.69i57j0i10i512l3j46i10i512j0i10i512l4j46i10i512.2703j0j7&sourceid=chrome&ie=UTF-8#sie=m;/g/11swr01s_d;2;/m/04t6ny;dt;fp;1;;">jogo do flamengo</a>
+    <br><br>
+
+    <img id="imagem-do-flamengo" src="data:image/png;base64,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" alt="escudo do flamengo">
+
+    <div id="noticias" >Noticicias principais</div>
+
+    <TAble>
+        <tr>
+            <TH>País</TH>
+            <th>Vitorias</th>
+            <th>Empates</th>
+            <th>Derrotas</th>
+            <th>Pontos</th>
+        </tr>   
+        <tr>
+            <td>Brasil</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+
+        </tr>
+        <tr>
+            <td>Servia</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+    </tr>
+    </TAble>
+</body>
+</html>
